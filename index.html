@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天" />
-  <meta property="og:description" content="iT 邦幫忙是 IT 領域的技術問答與分享社群，透過 IT 人互相幫忙，一起解決每天面臨的靠北時刻。一起來當 IT 人的超級英雄吧，拯救下一個卡關的 IT 人" />
-  <meta property="og:image" content="https://i.imgur.com/D9cZHL7.png" />
-  
-  
+  <meta property="og:type" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+
   <link rel="icon" href="../../favicon.ico">
   <title id="page-title">分享1</title>
 </head>
@@ -24,9 +23,11 @@
 <script>
     window.onload = function() {
       setTimeout(() => {
-        var meta = document.getElementsByTagName('meta')
-        meta['title'].setAttribute('content', 'edi111111t')
-      }, 2000)
+        document.querySelector('meta[property="og:type"]').setAttribute('content', 'website')
+        document.querySelector('meta[property="og:title"]').setAttribute('content', '1')
+        document.querySelector('meta[property="og:description"]').setAttribute('content', '2')
+        document.querySelector('meta[property="og:image"]').setAttribute('content', 'https://i.imgur.com/D9cZHL7.png')
+      }, 3000)
   }
 </script>
 <div id="app"></div>
