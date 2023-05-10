@@ -1,47 +1,25 @@
 <!DOCTYPE html>
 <html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="1" />
+    <meta property="og:description" content="2" />
+    <meta property="og:image" content="https://i.imgur.com/D9cZHL7.png" />
+    <title>分享1</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-  <!-- property 是標籤名稱，content 是標籤的值 -->
-  <meta property="og:url" content="https://ithelp.ithome.com.tw/articles/10278469" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="#21 No-code 之旅 — 如何讓網站在分享時看起來漂亮和有吸引力？Open Graph (OG) 簡介" />
-  <meta property="og:description" content="大家有沒有發現當有人在社群軟體分享網址的時候，通常除了網址本身還會看到一張縮圖加上網站的標題和描述？這就是用 Open Graph (OG) 設定出來的！今天會解釋一點點什麼是 OG tag (標籤)，加上怎麼在 Next.js 專案中設定 OG 標籤～" />
-  <meta property="og:image" content="https://i.imgur.com/D9cZHL7.png" />
-
-  <link rel="icon" href="../../favicon.ico">
-  <title id="page-title">分享1</title>
-</head>
-
-<body>
-<noscript>
-  <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
-    Please enable it to continue.</strong>
-</noscript>
-<script>
-    window.onload = function() {
-      setTimeout(() => {
-        document.querySelector('meta[property="og:type"]').setAttribute('content', 'website')
-        document.querySelector('meta[property="og:title"]').setAttribute('content', '1')
-        document.querySelector('meta[property="og:description"]').setAttribute('content', '2')
-        document.querySelector('meta[property="og:image"]').setAttribute('content', 'https://i.imgur.com/D9cZHL7.png')
-      }, 1000)
-  }
-</script>
-<div id="app"></div>
-<!-- <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
-<script>
-  // VConsole will be exported to `window.VConsole` by default.
-  // eslint-disable-next-line no-unused-vars
-  var vConsole = new window.VConsole()
-</script> -->
-<!-- built files will be auto injected -->
-
-</body>
-
+  <body>
+    <script>
+      window.onload = function () {
+        window.location.href = "https://www.baidu.com/";
+      };
+    </script>
+    <div id="app"></div>
+  </body>
 </html>
-
